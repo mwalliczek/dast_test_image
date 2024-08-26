@@ -35,7 +35,7 @@ RUN echo \
   tee /etc/apt/sources.list.d/docker.list > /dev/null
 RUN apt-get update
 
-RUN apt-get install docker-ce docker-ce-cli containerd.io
+RUN apt-get install -qy docker-ce docker-ce-cli containerd.io
 
 # Command prompt
 CMD /bin/bash
