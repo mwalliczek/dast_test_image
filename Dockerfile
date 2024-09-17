@@ -3,7 +3,7 @@ FROM debian:testing
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && \
-    apt-get install --no-install-recommends -qy ca-certificates curl openjdk-17-jre-headless mariadb-server
+    apt-get install --no-install-recommends -qy ca-certificates curl openjdk-17-jre-headless mariadb-server maven
     
 RUN rm -rf /var/lib/mysql; \
 	mkdir -p /var/lib/mysql /var/run/mysqld; \
